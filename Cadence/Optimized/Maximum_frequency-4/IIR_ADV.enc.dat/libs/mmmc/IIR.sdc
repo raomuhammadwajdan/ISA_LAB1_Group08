@@ -1,0 +1,1 @@
+/home/isa12/Desktop/ISA2018/lab1/Optimized/Fm_divide4/Synopsys/netlist/IIR.sdc

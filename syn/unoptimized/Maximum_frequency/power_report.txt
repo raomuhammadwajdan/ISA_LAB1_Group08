@@ -1,0 +1,43 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : IIR_CA
+Version: Z-2007.03-SP1
+Date   : Sat Oct 23 21:43:30 2021
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/isa12/Desktop/ISA2018/lab1/synopsys/Powerswitching/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+IIR_CA                 5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+  Cell Internal Power  = 313.2803 uW   (51%)
+  Net Switching Power  = 302.6384 uW   (49%)
+                         ---------
+Total Dynamic Power    = 615.9188 uW  (100%)
+
+Cell Leakage Power     =  87.2843 uW
+
+1

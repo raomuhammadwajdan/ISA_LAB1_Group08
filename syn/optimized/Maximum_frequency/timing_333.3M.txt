@@ -1,0 +1,93 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IIR_ADV
+Version: Z-2007.03-SP1
+Date   : Sat Nov 13 02:14:49 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: REG31/q_reg[3]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: REG51/q_reg[13]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IIR_ADV            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG31/q_reg[3]/CK (DFFR_X1)                             0.00       0.00 r
+  REG31/q_reg[3]/Q (DFFR_X1)                              0.21       0.21 r
+  REG31/q[3] (reg_4)                                      0.00       0.21 r
+  p10/mult1[3] (mulx_1)                                   0.00       0.21 r
+  p10/mult_21/a[3] (mulx_1_DW_mult_tc_0)                  0.00       0.21 r
+  p10/mult_21/U715/ZN (INV_X1)                            0.06       0.28 f
+  p10/mult_21/U459/Z (XOR2_X2)                            0.17       0.45 r
+  p10/mult_21/U430/ZN (NAND2_X2)                          0.12       0.57 f
+  p10/mult_21/U517/ZN (OAI22_X1)                          0.08       0.65 r
+  p10/mult_21/U143/S (HA_X1)                              0.08       0.73 r
+  p10/mult_21/U142/S (FA_X1)                              0.12       0.85 f
+  p10/mult_21/U710/ZN (AOI222_X1)                         0.11       0.96 r
+  p10/mult_21/U709/ZN (INV_X1)                            0.03       0.99 f
+  p10/mult_21/U426/ZN (NAND2_X1)                          0.03       1.02 r
+  p10/mult_21/U410/ZN (AND3_X1)                           0.06       1.08 r
+  p10/mult_21/U429/ZN (OAI222_X1)                         0.05       1.13 f
+  p10/mult_21/U708/ZN (AOI222_X1)                         0.10       1.23 r
+  p10/mult_21/U707/ZN (INV_X1)                            0.03       1.26 f
+  p10/mult_21/U451/ZN (NAND2_X1)                          0.03       1.29 r
+  p10/mult_21/U411/ZN (AND3_X1)                           0.06       1.34 r
+  p10/mult_21/U704/ZN (OAI222_X1)                         0.05       1.40 f
+  p10/mult_21/U454/ZN (NAND2_X1)                          0.03       1.43 r
+  p10/mult_21/U409/ZN (AND3_X1)                           0.06       1.49 r
+  p10/mult_21/U701/ZN (OAI222_X1)                         0.06       1.55 f
+  p10/mult_21/U440/ZN (NAND2_X1)                          0.04       1.59 r
+  p10/mult_21/U424/ZN (NAND3_X1)                          0.04       1.64 f
+  p10/mult_21/U433/ZN (NAND2_X1)                          0.03       1.67 r
+  p10/mult_21/U436/ZN (NAND3_X1)                          0.03       1.70 f
+  p10/mult_21/U42/CO (FA_X1)                              0.09       1.79 f
+  p10/mult_21/U41/CO (FA_X1)                              0.09       1.89 f
+  p10/mult_21/U40/CO (FA_X1)                              0.09       1.98 f
+  p10/mult_21/U39/CO (FA_X1)                              0.09       2.07 f
+  p10/mult_21/U38/CO (FA_X1)                              0.09       2.16 f
+  p10/mult_21/U37/CO (FA_X1)                              0.10       2.26 f
+  p10/mult_21/U421/ZN (NAND2_X1)                          0.04       2.30 r
+  p10/mult_21/U423/ZN (NAND3_X1)                          0.04       2.33 f
+  p10/mult_21/U20/CO (FA_X1)                              0.09       2.42 f
+  p10/mult_21/U10/CO (FA_X1)                              0.09       2.52 f
+  p10/mult_21/U9/CO (FA_X1)                               0.09       2.61 f
+  p10/mult_21/U8/CO (FA_X1)                               0.09       2.70 f
+  p10/mult_21/U457/ZN (XNOR2_X1)                          0.06       2.76 f
+  p10/mult_21/U464/ZN (XNOR2_X1)                          0.05       2.81 f
+  p10/mult_21/product[26] (mulx_1_DW_mult_tc_0)           0.00       2.81 f
+  p10/prod[13] (mulx_1)                                   0.00       2.81 f
+  REG51/d[13] (reg_2)                                     0.00       2.81 f
+  REG51/U32/ZN (NAND2_X1)                                 0.03       2.84 r
+  REG51/U31/ZN (OAI21_X1)                                 0.03       2.88 f
+  REG51/q_reg[13]/D (DFFR_X1)                             0.01       2.88 f
+  data arrival time                                                  2.88
+
+  clock MY_CLK (rise edge)                                3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.07       2.93
+  REG51/q_reg[13]/CK (DFFR_X1)                            0.00       2.93 r
+  library setup time                                     -0.04       2.89
+  data required time                                                 2.89
+  --------------------------------------------------------------------------
+  data required time                                                 2.89
+  data arrival time                                                 -2.88
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

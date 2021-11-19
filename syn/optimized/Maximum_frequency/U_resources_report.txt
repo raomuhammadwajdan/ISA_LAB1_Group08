@@ -1,0 +1,88 @@
+ 
+****************************************
+Report : resources
+Design : IIR_ADV
+Version: Z-2007.03-SP1
+Date   : Mon Nov 15 11:26:40 2019
+****************************************
+
+Resource Sharing Report for design IIR_ADV in file ./mulx.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r337     | DW_mult_tc   | a_width=14 |               | p6/mult_21           |
+|          |              | b_width=14 |               |                      |
+| r339     | DW_mult_tc   | a_width=14 |               | p7/mult_21           |
+|          |              | b_width=14 |               |                      |
+| r341     | DW_mult_tc   | a_width=14 |               | p8/mult_21           |
+|          |              | b_width=14 |               |                      |
+| r343     | DW_mult_tc   | a_width=14 |               | p9/mult_21           |
+|          |              | b_width=14 |               |                      |
+| r345     | DW_mult_tc   | a_width=14 |               | p11/mult_21          |
+|          |              | b_width=14 |               |                      |
+| r347     | DW_mult_tc   | a_width=14 |               | p10/mult_21          |
+|          |              | b_width=14 |               |                      |
+| r349     | s9_add_21_DP_OP_276_9387 |  |             | SUB1/sub_21          |
+| r351     | s9_add_21_DP_OP_276_9387 |  |             | SUB1/sub_21_2        |
+| r353     | s8_add_21_DP_OP_277_3998 |  |             | s6/add_21            |
+| r355     | s8_add_21_DP_OP_277_3998 |  |             | s7/add_21            |
+| r357     | s8_add_21_DP_OP_277_3998 |  |             | s8/add_21            |
+| r359     | s9_add_21_DP_OP_276_9387 |  |             | s9/add_21            |
+===============================================================================
+
+Datapath Report for design IIR_ADV in file ./mulx.vhd 
+
+RTL-datapath Connections for s8_add_21_DP_OP_277_3998-str
+====================================================================
+|                      |                      |            | Bus   |
+| RTL Wire             | Datapath Port        | Direction  | Width |
+====================================================================
+| mul1_reg             | I1                   | input      | 14    |
+| mul2_reg             | I2                   | input      | 14    |
+| mul3_reg             | I3                   | input      | 14    |
+| mul4_reg             | I4                   | input      | 14    |
+| DOUT                 | O2                   | output     | 14    |
+====================================================================
+
+
+Datapath Blocks in s8_add_21_DP_OP_277_3998-str
+===============================================================================
+|            | Out   |                           | Contained      | Operation |
+| Port       | Width | Datapath Block            | Operation_Line | Type      |
+===============================================================================
+| O2         | 14    | I1 + I2 + I3 + I4         | s8/add_21      | SIGNED    |
+|            |       |                           | s6/add_21      | SIGNED    |
+|            |       |                           | s7/add_21      | SIGNED    |
+===============================================================================
+
+Datapath Report for design IIR_ADV in file ./mulx.vhd 
+
+RTL-datapath Connections for s9_add_21_DP_OP_276_9387-str
+====================================================================
+|                      |                      |            | Bus   |
+| RTL Wire             | Datapath Port        | Direction  | Width |
+====================================================================
+| reg6                 | I1                   | input      | 14    |
+| reg7                 | I2                   | input      | 14    |
+| xin                  | I3                   | input      | 14    |
+| w                    | O1                   | output     | 14    |
+====================================================================
+
+
+Datapath Blocks in s9_add_21_DP_OP_276_9387-str
+===============================================================================
+|            | Out   |                           | Contained      | Operation |
+| Port       | Width | Datapath Block            | Operation_Line | Type      |
+===============================================================================
+| O1         | 14    | 0 - I1 - I2 + I3          | s9/add_21      | SIGNED    |
+|            |       |                           | SUB1/sub_21_2  | SIGNED    |
+|            |       |                           | SUB1/sub_21    | SIGNED    |
+===============================================================================
+
+
+No implementations to report
+
+No multiplexors to report
+1

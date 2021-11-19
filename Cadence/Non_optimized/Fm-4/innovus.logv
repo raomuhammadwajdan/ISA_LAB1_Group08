@@ -1,0 +1,62 @@
+[11/01 04:35:08      0s] 
+[11/01 04:35:08      0s] Cadence Innovus(TM) Implementation System.
+[11/01 04:35:08      0s] Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+[11/01 04:35:08      0s] 
+[11/01 04:35:08      0s] Version:	v17.11-s080_1, built Fri Aug 4 11:13:11 PDT 2017
+[11/01 04:35:08      0s] Options:	
+[11/01 04:35:08      0s] Date:		Mon Nov  1 05:03:38 2021
+[11/01 04:35:08      0s] Host:		isa (x86_64 w/Linux 2.6.18-419.el5) (1core*4cpus*QEMU Virtual CPU version (cpu64-rhel6) 4096KB)
+[11/01 04:35:08      0s] OS:		CentOS release 5.11 (Final)
+[11/01 04:35:08      0s] 
+[11/01 04:35:08      0s] License:
+[11/01 04:35:08      0s] 		invs	Innovus Implementation System	17.1	checkout succeeded
+[11/01 04:35:08      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[11/01 04:35:30     21s] @(#)CDS: Innovus v17.11-s080_1 (64bit) 08/04/2017 11:13 (Linux 2.6.18-194.el5)
+[11/01 04:35:30     21s] @(#)CDS: NanoRoute 17.11-s080_1 NR170721-2155/17_11-UB (database version 2.30, 390.7.1) {superthreading v1.44}
+[11/01 04:35:30     21s] @(#)CDS: AAE 17.11-s034 (64bit) 08/04/2017 (Linux 2.6.18-194.el5)
+[11/01 04:35:30     21s] @(#)CDS: CTE 17.11-s053_1 () Aug  1 2017 23:31:41 ( )
+[11/01 04:35:30     21s] @(#)CDS: SYNTECH 17.11-s012_1 () Jul 21 2017 02:29:12 ( )
+[11/01 04:35:30     21s] @(#)CDS: CPE v17.11-s095
+[11/01 04:35:30     21s] @(#)CDS: IQRC/TQRC 16.1.1-s215 (64bit) Thu Jul  6 20:18:10 PDT 2017 (Linux 2.6.18-194.el5)
+[11/01 04:35:30     21s] @(#)CDS: OA 22.50-p063 Fri Feb  3 19:45:13 2017
+[11/01 04:35:30     21s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[11/01 04:35:30     21s] @(#)CDS: RCDB 11.10
+[11/01 04:35:30     21s] --- Running on isa (x86_64 w/Linux 2.6.18-419.el5) (1core*4cpus*QEMU Virtual CPU version (cpu64-rhel6) 4096KB) ---
+[11/01 04:35:30     21s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_22338_isa_isa12_F3P5au.
+
+[11/01 04:35:31     21s] Change the soft stacksize limit to 0.2%RAM (32 mbytes). Set global soft_stack_size_limit to change the value.
+[11/01 04:35:32     22s] 
+[11/01 04:35:32     22s] **INFO:  MMMC transition support version v31-84 
+[11/01 04:35:32     22s] 
+[11/01 04:35:32     22s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[11/01 04:35:32     22s] <CMD> suppressMessage ENCEXT-2799
+[11/01 04:35:32     22s] <CMD> getDrawView
+[11/01 04:35:32     22s] <CMD> loadWorkspace -name Physical
+[11/01 04:35:32     22s] <CMD> win
+[11/01 04:36:50     23s] <CMD> set init_design_netlisttype verilog
+[11/01 04:36:50     23s] <CMD> set init_design_settop 1
+[11/01 04:36:50     23s] <CMD> set init_top_cell IIR_CA
+[11/01 04:36:50     23s] <CMD> set init_verilog ../synopsys/netlist/IIR.v
+[11/01 04:36:50     23s] <CMD> set init_lef_file /software/dk/nangate45/lef/NangateOpenCellLibrary.lef
+[11/01 04:36:50     23s] <CMD> set init_gnd_net VSS
+[11/01 04:36:50     23s] <CMD> set init_pwr_net VDD
+[11/01 04:36:57     24s] <CMD> set init_mmmc_file mmm_design.tcl
+[11/01 04:36:57     24s] <CMD> init_design
+[11/01 04:36:57     24s] #% Begin Load MMMC data ... (date=11/01 04:36:57, mem=414.8M)
+[11/01 04:36:57     24s] **ERROR: (TCLCMD-989):	cannot open SDC file '../synopsys/netlist/IIR.sdc' for mode 'SDC_layout'
+<CMD> set init_mmmc_file mmm_design.tcl
+[11/01 04:37:16     24s] <CMD> init_design
+[11/01 04:37:16     24s] report_message: '-start_cmd/-end_cmd' can not be nested. Interior calls do nothing. Ignore.
+[11/01 04:37:16     24s] % Begin Load MMMC data ... (date=11/01 04:37:16, mem=414.4M)
+[11/01 04:37:16     24s] Extraction setup Delayed 
+[11/01 04:37:16     24s] Extraction setup Delayed 
+[11/01 04:37:16     24s] **ERROR: (TCLCMD-989):	cannot open SDC file '../synopsys/netlist/IIR.sdc' for mode 'SDC_layout'
+
+[11/01 04:42:40     25s] *** Memory Usage v#1 (Current mem = 513.684M, initial mem = 183.457M) ***
+[11/01 04:42:40     25s] 
+[11/01 04:42:40     25s] *** Summary of all messages that are not suppressed in this session:
+[11/01 04:42:40     25s] Severity  ID               Count  Summary                                  
+[11/01 04:42:40     25s] ERROR     TCLCMD-989           2  cannot open SDC file '%s' for mode '%s'  
+[11/01 04:42:40     25s] *** Message Summary: 0 warning(s), 2 error(s)
+[11/01 04:42:40     25s] 
+[11/01 04:42:40     25s] --- Ending "Innovus" (totcpu=0:00:25.1, real=0:07:32, mem=513.7M) ---
