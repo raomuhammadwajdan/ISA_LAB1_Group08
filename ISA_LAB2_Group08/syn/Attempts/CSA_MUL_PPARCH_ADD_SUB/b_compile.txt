@@ -1,0 +1,96 @@
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library       |      Version       | Available |
+============================================================================
+| Basic DW Building Blocks                | Z-2007.03-DWBB_0704 |    *     |
+| Licensed DW Building Blocks             | Z-2007.03-DWBB_0704 |    *     |
+============================================================================
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'reg_0'
+  Processing 'sumx_0'
+  Processing 'subx'
+  Processing 'mulx_0'
+  Processing 'IIR_ADV'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Mapping 'sumx_1_DW01_add_0'
+  Mapping 'sumx_2_DW01_add_0'
+  Mapping 'sumx_3_DW01_add_0'
+  Mapping 'sumx_0_DW01_add_0'
+  Mapping 'subx_DW01_sub_0'
+  Mapping 'subx_DW01_sub_1'
+  Processing 'mulx_1_DW02_mult_0'
+  Processing 'mulx_1_DW01_add_0'
+  Processing 'mulx_2_DW02_mult_0'
+  Processing 'mulx_2_DW01_add_0'
+  Processing 'mulx_3_DW02_mult_0'
+  Processing 'mulx_3_DW01_add_0'
+  Processing 'mulx_4_DW02_mult_0'
+  Processing 'mulx_4_DW01_add_0'
+  Processing 'mulx_5_DW02_mult_0'
+  Processing 'mulx_5_DW01_add_0'
+  Processing 'mulx_0_DW02_mult_0'
+  Processing 'mulx_0_DW01_add_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'subx'. (DDB-72)
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:19    8507.7      0.00       0.0       0.0                          
+    0:00:21    8118.1      0.00       0.0       0.0                          
+    0:00:21    8118.1      0.00       0.0       0.0                          
+    0:00:21    8118.1      0.00       0.0       0.0                          
+    0:00:21    8118.1      0.00       0.0       0.0                          
+    0:00:21    8118.1      0.00       0.0       0.0                          
+    0:00:21    8118.1      0.00       0.0       0.0                          
+    0:00:21    8118.1      0.00       0.0       0.0                          
+    0:00:21    8118.1      0.00       0.0       0.0                          
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:21    8118.1      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:21    8118.1      0.00       0.0       0.0                          
+    0:00:21    8118.1      0.00       0.0       0.0                          
+    0:00:22    8100.8      0.01       0.0       0.0                          
+    0:00:22    8100.2      0.01       0.0       0.0                          
+    0:00:22    8099.7      0.01       0.0       0.0                          
+    0:00:22    8099.2      0.01       0.0       0.0                          
+    0:00:22    8098.6      0.01       0.0       0.0                          
+    0:00:22    8098.6      0.01       0.0       0.0                          
+    0:00:22    8099.2      0.00       0.0       0.0                          
+    0:00:22    8099.2      0.00       0.0       0.0                          
+    0:00:22    8099.2      0.00       0.0       0.0                          
+    0:00:22    8099.2      0.00       0.0       0.0                          
+    0:00:22    8099.2      0.00       0.0       0.0                          
+    0:00:22    8099.2      0.00       0.0       0.0                          
+Loading db file '/software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db'
+
+  Optimization Complete
+  ---------------------
+1

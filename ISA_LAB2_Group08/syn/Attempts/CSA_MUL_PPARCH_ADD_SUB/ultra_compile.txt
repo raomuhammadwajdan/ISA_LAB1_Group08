@@ -1,0 +1,170 @@
+Alib files are up-to-date.
+Information: Data-path optimization is enabled. (DP-1)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library       |      Version       | Available |
+============================================================================
+| Basic DW Building Blocks                | Z-2007.03-DWBB_0704 |    *     |
+| Licensed DW Building Blocks             | Z-2007.03-DWBB_0704 |    *     |
+============================================================================
+
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Loaded alib file './alib-52/NangateOpenCellLibrary_typical_ecsm_nowlm.db.alib'
+Information: Ungrouping hierarchy p6 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy SUB1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy s6 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy REG61 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy REG51 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy REG41 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy REG31 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy REG21 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy REG11 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy REG4_1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy REGISTER4 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy REG3_1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy REGISTER3 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy REG2_1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy REGISTER2 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy REG1_1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy REGISTER1 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy p10 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy p11 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy p9 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy p8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy p7 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy s9 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy s8 before Pass 1 (OPT-776)
+Information: Ungrouping hierarchy s7 before Pass 1 (OPT-776)
+Information: Ungrouping 25 of 28 hierarchies before Pass 1 (OPT-775)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'IIR_ADV'
+Information: Dont_touch on cell 'REGISTER_in' of design 'reg' will be
+	ignored by compile because it contains unmapped
+	synthetic cells. (OPT-933)
+Information: Dont_touch on cell 'REGISTER_out' of design 'reg' will be
+	ignored by compile because it contains unmapped
+	synthetic cells. (OPT-933)
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Mapping 'IIR_ADV_DW01_add_0'
+  Mapping 'IIR_ADV_DW01_add_1'
+  Mapping 'IIR_ADV_DW01_add_2'
+  Processing 'IIR_ADV_DW02_mult_0'
+  Processing 'IIR_ADV_DW01_add_3'
+  Processing 'IIR_ADV_DW02_mult_1'
+  Processing 'IIR_ADV_DW01_add_4'
+  Processing 'IIR_ADV_DW02_mult_2'
+  Processing 'IIR_ADV_DW01_add_5'
+  Processing 'IIR_ADV_DW02_mult_3'
+  Processing 'IIR_ADV_DW01_add_6'
+  Processing 'IIR_ADV_DW02_mult_4'
+  Processing 'IIR_ADV_DW01_add_7'
+  Mapping 'IIR_ADV_DW01_add_8'
+  Mapping 'IIR_ADV_DW01_sub_0'
+  Mapping 'IIR_ADV_DW01_sub_1'
+  Processing 'IIR_ADV_DW02_mult_5'
+  Processing 'IIR_ADV_DW01_add_9'
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'IIR_ADV'. (DDB-72)
+  Re-synthesis Optimization (Phase 1)
+  Re-synthesis Optimization (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+  Global Optimization (Phase 30)
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:23    7750.4      0.00       0.0       0.0                          
+    0:00:23    7750.4      0.00       0.0       0.0                          
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:23    7750.4      0.00       0.0       0.0                          
+    0:00:23    7750.4      0.00       0.0       0.0                          
+    0:00:23    7750.4      0.00       0.0       0.0                          
+    0:00:23    7750.4      0.00       0.0       0.0                          
+    0:00:23    7750.4      0.00       0.0       0.0                          
+    0:00:23    7750.4      0.00       0.0       0.0                          
+    0:00:23    7750.4      0.00       0.0       0.0                          
+    0:00:23    7750.4      0.00       0.0       0.0                          
+    0:00:24    7747.2      0.00       0.0       0.0                          
+    0:00:24    7747.2      0.00       0.0       0.0                          
+    0:00:24    7747.2      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 0)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:24    7747.2      0.00       0.0       0.0                          
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+    0:00:28    7719.6      0.00       0.0       0.0                          
+    0:00:28    7719.6      0.00       0.0       0.0                          
+    0:00:28    7719.6      0.00       0.0       0.0                          
+    0:00:28    7719.6      0.00       0.0       0.0                          
+Loading db file '/software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db'
+
+  Optimization Complete
+  ---------------------
+1
