@@ -1,0 +1,119 @@
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library       |      Version       | Available |
+============================================================================
+| Basic DW Building Blocks                | Z-2007.03-DWBB_0704 |    *     |
+| Licensed DW Building Blocks             | Z-2007.03-DWBB_0704 |    *     |
+============================================================================
+
+
+Information: There are 19 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'reg_0'
+  Processing 'sumx_n114_n214_0'
+  Processing 'subx'
+  Processing 'HA_0'
+  Processing 'sumx_n127_n227_0'
+  Processing 'FA_0'
+  Processing 'MUX61_generic_n28_0'
+  Processing 'ENCODER_0'
+  Processing 'BOOT_ENC_n_op_214_0'
+  Processing 'BOOTHMUL_n_op_114_n_op_214_0'
+  Processing 'IIR_ADV'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'sumx_n114_n214_1_DW01_add_0'
+  Processing 'sumx_n114_n214_2_DW01_add_0'
+  Processing 'sumx_n114_n214_3_DW01_add_0'
+  Processing 'sumx_n114_n214_0_DW01_add_0'
+  Processing 'sumx_n127_n227_1_DW01_add_0'
+  Processing 'sumx_n127_n227_2_DW01_add_0'
+  Processing 'sumx_n127_n227_3_DW01_add_0'
+  Processing 'sumx_n127_n227_4_DW01_add_0'
+  Processing 'sumx_n127_n227_5_DW01_add_0'
+  Processing 'sumx_n127_n227_0_DW01_add_0'
+  Processing 'subx_DW01_sub_0'
+  Processing 'subx_DW01_sub_1'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:30   18531.4      0.37       5.6      70.8                          
+    0:00:48   12330.4      0.37       5.1       0.0                          
+    0:00:58   12365.5      0.34       3.1       0.0                          
+    0:01:02   12363.9      0.34       2.7       0.0                          
+    0:01:03   12363.7      0.34       2.6       0.0                          
+    0:01:04   12367.4      0.34       2.5       0.0                          
+    0:01:05   12371.4      0.34       2.5       0.0                          
+    0:01:05   12372.7      0.34       2.4       0.0                          
+    0:01:06   12379.6      0.34       2.3       0.0                          
+    0:01:07   12387.6      0.33       2.3       0.0                          
+    0:01:07   12387.6      0.33       2.3       0.0                          
+    0:01:07   12387.6      0.33       2.3       0.0                          
+    0:01:07   12387.6      0.33       2.3       0.0                          
+    0:01:07   12387.6      0.33       2.3       0.0                          
+    0:01:07   12387.6      0.33       2.3       0.0                          
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:07   12387.6      0.33       2.3       0.0                          
+    0:01:11   12503.9      0.11       0.8      24.2 REG2_1/q_reg[13]/D       
+    0:01:14   12595.6      0.04       0.2      24.2 REG1_1/q_reg[13]/D       
+    0:01:16   12655.5      0.00       0.0      28.3                          
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:16   12655.5      0.00       0.0      28.3                          
+    0:01:16   12639.0      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:16   12639.0      0.00       0.0       0.0                          
+    0:01:16   12639.0      0.00       0.0       0.0                          
+    0:01:25   12606.8      0.03       0.1       0.0                          
+    0:01:27   12599.4      0.03       0.1       0.0                          
+    0:01:28   12594.0      0.03       0.1       0.0                          
+    0:01:28   12590.3      0.03       0.1       0.0                          
+    0:01:29   12586.6      0.03       0.1       0.0                          
+    0:01:29   12586.6      0.03       0.1       0.0                          
+    0:01:30   12601.5      0.00       0.0       0.0                          
+    0:01:30   12507.6      0.00       0.0       0.0                          
+    0:01:30   12507.6      0.00       0.0       0.0                          
+    0:01:30   12507.6      0.00       0.0       0.0                          
+    0:01:30   12507.6      0.00       0.0       0.0                          
+    0:01:30   12507.6      0.00       0.0       0.0                          
+    0:01:30   12507.6      0.00       0.0       0.0                          
+    0:01:32   12509.2      0.00       0.0       0.0                          
+Loading db file '/software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db'
+
+  Optimization Complete
+  ---------------------
+1

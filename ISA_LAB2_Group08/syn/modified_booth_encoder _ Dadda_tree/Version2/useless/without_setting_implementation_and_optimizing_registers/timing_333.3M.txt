@@ -1,0 +1,80 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IIR_ADV
+Version: Z-2007.03-SP1
+Date   : Wed Dec  15 03:10:48 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: A2[3] (input port clocked by MY_CLK)
+  Endpoint: REG51/q_reg[13]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IIR_ADV            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 r
+  A2[3] (in)                                              0.00       0.50 r
+  U2747/ZN (INV_X2)                                       0.07       0.57 f
+  U2794/ZN (AOI22_X2)                                     0.14       0.72 r
+  U2970/ZN (INV_X1)                                       0.09       0.80 f
+  U3095/ZN (OAI221_X1)                                    0.06       0.86 r
+  U3097/ZN (NAND2_X1)                                     0.04       0.90 f
+  U3720/Z (XOR2_X1)                                       0.08       0.98 f
+  U3719/ZN (XNOR2_X1)                                     0.07       1.05 f
+  U2089/Z (XOR2_X1)                                       0.08       1.13 f
+  U3810/ZN (XNOR2_X1)                                     0.07       1.20 f
+  U2072/Z (XOR2_X1)                                       0.08       1.27 f
+  U3809/ZN (XNOR2_X1)                                     0.07       1.35 f
+  U1961/Z (XOR2_X1)                                       0.08       1.43 f
+  U3813/ZN (XNOR2_X1)                                     0.07       1.49 f
+  U2857/ZN (NOR2_X1)                                      0.05       1.54 r
+  U2859/ZN (OAI21_X1)                                     0.03       1.58 f
+  p10/Partial_products_sum/add_23/U1_7/CO (FA_X1)         0.09       1.67 f
+  p10/Partial_products_sum/add_23/U1_8/CO (FA_X1)         0.09       1.76 f
+  p10/Partial_products_sum/add_23/U1_9/CO (FA_X1)         0.09       1.85 f
+  p10/Partial_products_sum/add_23/U1_10/CO (FA_X1)        0.10       1.95 f
+  U2870/ZN (NAND2_X1)                                     0.04       1.99 r
+  U2868/ZN (NAND3_X1)                                     0.04       2.03 f
+  p10/Partial_products_sum/add_23/U1_12/CO (FA_X1)        0.09       2.12 f
+  p10/Partial_products_sum/add_23/U1_13/CO (FA_X1)        0.09       2.21 f
+  p10/Partial_products_sum/add_23/U1_14/CO (FA_X1)        0.09       2.30 f
+  p10/Partial_products_sum/add_23/U1_15/CO (FA_X1)        0.09       2.39 f
+  p10/Partial_products_sum/add_23/U1_16/CO (FA_X1)        0.09       2.48 f
+  p10/Partial_products_sum/add_23/U1_17/CO (FA_X1)        0.09       2.58 f
+  p10/Partial_products_sum/add_23/U1_18/CO (FA_X1)        0.09       2.67 f
+  p10/Partial_products_sum/add_23/U1_19/CO (FA_X1)        0.09       2.76 f
+  U2866/Z (XOR2_X1)                                       0.07       2.83 f
+  U3839/ZN (NAND2_X1)                                     0.03       2.86 r
+  U3822/ZN (NAND2_X1)                                     0.02       2.88 f
+  REG51/q_reg[13]/D (DFFR_X1)                             0.01       2.89 f
+  data arrival time                                                  2.89
+
+  clock MY_CLK (rise edge)                                3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.07       2.93
+  REG51/q_reg[13]/CK (DFFR_X1)                            0.00       2.93 r
+  library setup time                                     -0.04       2.89
+  data required time                                                 2.89
+  --------------------------------------------------------------------------
+  data required time                                                 2.89
+  data arrival time                                                 -2.89
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

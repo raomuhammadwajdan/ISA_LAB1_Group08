@@ -1,0 +1,27 @@
+ 
+****************************************
+Report : area
+Design : IIR_ADV
+Version: Z-2007.03-SP1
+Date   : Tue Dec  14 23:29:42 2021
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db)
+    gtech (File: /software/synopsys/syn_current/libraries/syn/gtech.db)
+
+Number of ports:              116
+Number of nets:              4220
+Number of cells:             3821
+Number of references:          31
+
+Combinational area:       5241.529969
+Noncombinational area:    1128.904037
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          6370.434082
+Total area:                 undefined
+
+Information: This design contains unmapped logic. (RPT-7)
+1
