@@ -1,0 +1,123 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IIR_ADV
+Version: Z-2007.03-SP1
+Date   : Thu Dec  16 06:10:48 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: A2[1] (input port clocked by MY_CLK)
+  Endpoint: REG51/q_reg[13]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IIR_ADV            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  A2[1] (in)                                              0.00       0.50 f
+  p10/B[1] (BOOTHMUL_n_op_114_n_op_214_1)                 0.00       0.50 f
+  p10/Booth_enc/B[1] (BOOT_ENC_n_op_214_1)                0.00       0.50 f
+  p10/Booth_enc/encx_1/B[0] (ENCODER_6)                   0.00       0.50 f
+  p10/Booth_enc/encx_1/U4/ZN (XNOR2_X1)                   0.06       0.56 f
+  p10/Booth_enc/encx_1/U1/ZN (OAI22_X2)                   0.07       0.63 r
+  p10/Booth_enc/encx_1/Vp[1] (ENCODER_6)                  0.00       0.63 r
+  p10/Booth_enc/ENC[4] (BOOT_ENC_n_op_214_1)              0.00       0.63 r
+  p10/mux_1/S[1] (MUX61_generic_n28_6)                    0.00       0.63 r
+  p10/mux_1/U9/ZN (INV_X1)                                0.04       0.67 f
+  p10/mux_1/U20/ZN (OR3_X2)                               0.10       0.77 f
+  p10/mux_1/U17/ZN (INV_X1)                               0.03       0.80 r
+  p10/mux_1/U31/ZN (NAND2_X1)                             0.02       0.82 f
+  p10/mux_1/U34/ZN (AND3_X1)                              0.05       0.87 f
+  p10/mux_1/U99/ZN (NAND2_X1)                             0.03       0.90 r
+  p10/mux_1/Y[4] (MUX61_generic_n28_6)                    0.00       0.90 r
+  p10/HA_4/B (HA_6)                                       0.00       0.90 r
+  p10/HA_4/U2/Z (XOR2_X1)                                 0.08       0.98 r
+  p10/HA_4/S (HA_6)                                       0.00       0.98 r
+  p10/FA_7/A (FA_20)                                      0.00       0.98 r
+  p10/FA_7/U4/Z (XOR2_X1)                                 0.08       1.06 r
+  p10/FA_7/U2/ZN (XNOR2_X1)                               0.04       1.10 f
+  p10/FA_7/S (FA_20)                                      0.00       1.10 f
+  p10/Partial_products_sum/add1[4] (sumx_n127_n227_1)     0.00       1.10 f
+  p10/Partial_products_sum/add_23/A[4] (sumx_n127_n227_1_DW01_add_0)
+                                                          0.00       1.10 f
+  p10/Partial_products_sum/add_23/U134/ZN (NAND2_X1)      0.03       1.14 r
+  p10/Partial_products_sum/add_23/U135/ZN (AND3_X1)       0.05       1.19 r
+  p10/Partial_products_sum/add_23/U130/ZN (OR2_X1)        0.03       1.22 r
+  p10/Partial_products_sum/add_23/U41/ZN (AND3_X1)        0.05       1.27 r
+  p10/Partial_products_sum/add_23/U125/ZN (OAI222_X1)     0.05       1.32 f
+  p10/Partial_products_sum/add_23/U128/ZN (INV_X1)        0.04       1.35 r
+  p10/Partial_products_sum/add_23/U127/ZN (OAI222_X1)     0.05       1.41 f
+  p10/Partial_products_sum/add_23/U145/ZN (OAI21_X1)      0.05       1.46 r
+  p10/Partial_products_sum/add_23/U144/ZN (OAI21_X1)      0.04       1.49 f
+  p10/Partial_products_sum/add_23/U112/ZN (NAND2_X1)      0.04       1.53 r
+  p10/Partial_products_sum/add_23/U69/ZN (AND3_X1)        0.06       1.59 r
+  p10/Partial_products_sum/add_23/U111/ZN (OAI222_X1)     0.04       1.63 f
+  p10/Partial_products_sum/add_23/U142/ZN (OAI21_X1)      0.04       1.68 r
+  p10/Partial_products_sum/add_23/U141/ZN (OAI21_X1)      0.04       1.71 f
+  p10/Partial_products_sum/add_23/U138/ZN (OAI21_X1)      0.04       1.76 r
+  p10/Partial_products_sum/add_23/U137/ZN (OAI21_X1)      0.04       1.80 f
+  p10/Partial_products_sum/add_23/U89/ZN (NAND2_X1)       0.04       1.84 r
+  p10/Partial_products_sum/add_23/U12/ZN (NAND3_X1)       0.04       1.88 f
+  p10/Partial_products_sum/add_23/U52/ZN (NAND2_X1)       0.03       1.91 r
+  p10/Partial_products_sum/add_23/U9/ZN (NAND3_X1)        0.04       1.95 f
+  p10/Partial_products_sum/add_23/U22/ZN (NAND2_X1)       0.04       1.99 r
+  p10/Partial_products_sum/add_23/U18/ZN (NAND3_X1)       0.04       2.03 f
+  p10/Partial_products_sum/add_23/U29/ZN (NAND2_X1)       0.04       2.06 r
+  p10/Partial_products_sum/add_23/U26/ZN (NAND3_X1)       0.04       2.10 f
+  p10/Partial_products_sum/add_23/U36/ZN (NAND2_X1)       0.04       2.13 r
+  p10/Partial_products_sum/add_23/U33/ZN (NAND3_X1)       0.04       2.17 f
+  p10/Partial_products_sum/add_23/U63/ZN (NAND2_X1)       0.04       2.21 r
+  p10/Partial_products_sum/add_23/U59/ZN (NAND3_X1)       0.04       2.24 f
+  p10/Partial_products_sum/add_23/U72/ZN (NAND2_X1)       0.04       2.28 r
+  p10/Partial_products_sum/add_23/U58/ZN (NAND3_X1)       0.04       2.32 f
+  p10/Partial_products_sum/add_23/U79/ZN (NAND2_X1)       0.04       2.35 r
+  p10/Partial_products_sum/add_23/U60/ZN (NAND3_X1)       0.04       2.39 f
+  p10/Partial_products_sum/add_23/U94/ZN (NAND2_X1)       0.04       2.43 r
+  p10/Partial_products_sum/add_23/U97/ZN (NAND3_X1)       0.04       2.47 f
+  p10/Partial_products_sum/add_23/U102/ZN (NAND2_X1)      0.04       2.50 r
+  p10/Partial_products_sum/add_23/U2/ZN (NAND3_X1)        0.04       2.54 f
+  p10/Partial_products_sum/add_23/U109/ZN (NAND2_X1)      0.03       2.57 r
+  p10/Partial_products_sum/add_23/U110/ZN (NAND3_X1)      0.04       2.61 f
+  p10/Partial_products_sum/add_23/U1_24/CO (FA_X1)        0.10       2.70 f
+  p10/Partial_products_sum/add_23/U47/ZN (NAND2_X1)       0.03       2.74 r
+  p10/Partial_products_sum/add_23/U49/ZN (NAND3_X1)       0.03       2.77 f
+  p10/Partial_products_sum/add_23/U83/ZN (XNOR2_X1)       0.06       2.83 f
+  p10/Partial_products_sum/add_23/SUM[26] (sumx_n127_n227_1_DW01_add_0)
+                                                          0.00       2.83 f
+  p10/Partial_products_sum/sum1[26] (sumx_n127_n227_1)
+                                                          0.00       2.83 f
+  p10/P[13] (BOOTHMUL_n_op_114_n_op_214_1)                0.00       2.83 f
+  REG51/d[13] (reg_2)                                     0.00       2.83 f
+  REG51/U35/ZN (NAND2_X1)                                 0.03       2.86 r
+  REG51/U33/ZN (NAND2_X1)                                 0.03       2.88 f
+  REG51/q_reg[13]/D (DFFR_X1)                             0.01       2.89 f
+  data arrival time                                                  2.89
+
+  clock MY_CLK (rise edge)                                3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.07       2.93
+  REG51/q_reg[13]/CK (DFFR_X1)                            0.00       2.93 r
+  library setup time                                     -0.04       2.89
+  data required time                                                 2.89
+  --------------------------------------------------------------------------
+  data required time                                                 2.89
+  data arrival time                                                 -2.89
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -1,0 +1,28 @@
+ 
+****************************************
+Report : resources
+Design : IIR_ADV
+Version: Z-2007.03-SP1
+Date   : Thu Dec  16 06:10:48 2021
+****************************************
+
+Resource Sharing Report 
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| SUB1/r850               |            |               |                      |
+|          | DW01_sub     | width=14   |               | SUB1/sub_1_root_sub_0_root_sub_21_2 |
+| SUB1/r852               |            |               |                      |
+|          | DW01_sub     | width=14   |               | SUB1/sub_0_root_sub_0_root_sub_21_2 |
+| s6/r280  | DW01_add     | width=14   |               | s6/add_23            |
+| p6/Partial_products_sum/r60          |               |                      |
+|          | DW01_add     | width=27   |               | p6/Partial_products_sum/add_23 |
+===============================================================================
+
+
+No implementations to report
+
+No multiplexors to report
+1

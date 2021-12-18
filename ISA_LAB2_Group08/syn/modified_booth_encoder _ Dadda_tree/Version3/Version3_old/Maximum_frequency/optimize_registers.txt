@@ -1,0 +1,25 @@
+Removing uniquified design 'BOOTHMUL_n_op_114_n_op_214'.
+Removing uniquified design 'sumx_n114_n214'.
+Removing uniquified design 'BOOT_ENC_n_op_214'.
+Removing uniquified design 'MUX61_generic_n28'.
+Removing uniquified design 'compressor_5_3'.
+Removing uniquified design 'compressor_4_2'.
+Removing uniquified design 'FA'.
+Removing uniquified design 'HA'.
+Removing uniquified design 'sumx_n127_n227'.
+Removing uniquified design 'ENCODER'.
+  Uniquified 14 instances of design 'reg'.
+  Uniquified 6 instances of design 'BOOTHMUL_n_op_114_n_op_214'.
+  Uniquified 4 instances of design 'sumx_n114_n214'.
+  Uniquified 6 instances of design 'BOOT_ENC_n_op_214'.
+  Uniquified 42 instances of design 'MUX61_generic_n28'.
+  Uniquified 108 instances of design 'compressor_5_3'.
+  Uniquified 12 instances of design 'compressor_4_2'.
+  Uniquified 156 instances of design 'FA'.
+  Uniquified 54 instances of design 'HA'.
+  Uniquified 6 instances of design 'sumx_n127_n227'.
+  Uniquified 42 instances of design 'ENCODER'.
+  Loading design 'IIR_ADV'
+Error: Design contains unmapped DesignWare parts.  Cannot retime. (RTDC-17)
+Warning: Retiming failed. No registers have been moved. (RTDC-14)
+0
