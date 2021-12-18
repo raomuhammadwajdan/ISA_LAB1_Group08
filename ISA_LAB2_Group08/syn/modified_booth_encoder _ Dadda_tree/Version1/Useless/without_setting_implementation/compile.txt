@@ -1,0 +1,127 @@
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library       |      Version       | Available |
+============================================================================
+| Basic DW Building Blocks                | Z-2007.03-DWBB_0704 |    *     |
+| Licensed DW Building Blocks             | Z-2007.03-DWBB_0704 |    *     |
+============================================================================
+
+
+Information: There are 18 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'reg_0'
+  Processing 'sumx_n114_n214_0'
+  Processing 'subx'
+  Processing 'HA_0'
+  Processing 'sumx_n127_n227_0'
+  Processing 'FA_0'
+  Processing 'MUX61_generic_n28_0'
+  Processing 'ENCODER_0'
+  Processing 'BOOT_ENC_n_op_214_0'
+  Processing 'BOOTHMUL_n_op_114_n_op_214_0'
+  Processing 'IIR_ADV'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'sumx_n114_n214_1_DW01_add_0'
+  Processing 'sumx_n114_n214_2_DW01_add_0'
+  Processing 'sumx_n114_n214_3_DW01_add_0'
+  Processing 'sumx_n114_n214_0_DW01_add_0'
+  Processing 'sumx_n127_n227_1_DW01_add_0'
+  Processing 'sumx_n127_n227_2_DW01_add_0'
+  Processing 'sumx_n127_n227_3_DW01_add_0'
+  Processing 'sumx_n127_n227_4_DW01_add_0'
+  Processing 'sumx_n127_n227_5_DW01_add_0'
+  Processing 'sumx_n127_n227_0_DW01_add_0'
+  Processing 'subx_DW01_sub_0'
+  Processing 'subx_DW01_sub_1'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:36   18438.9      0.49       9.3      19.3                          
+    0:00:54   12511.8      0.51       8.4       0.0                          
+    0:01:04   12543.2      0.47       6.0       0.0                          
+    0:01:07   12550.1      0.44       5.5       0.0                          
+    0:01:08   12557.3      0.43       5.2       0.0                          
+    0:01:09   12561.3      0.42       5.0       0.0                          
+    0:01:10   12562.4      0.42       4.9       0.0                          
+    0:01:11   12566.6      0.41       4.7       0.0                          
+    0:01:12   12569.8      0.41       4.6       0.0                          
+    0:01:13   12575.2      0.41       4.4       0.0                          
+    0:01:13   12577.0      0.41       4.3       0.0                          
+    0:01:14   12579.1      0.41       4.2       0.0                          
+    0:01:15   12579.1      0.41       4.2       0.0                          
+    0:01:15   12579.1      0.41       4.2       0.0                          
+    0:01:15   12579.1      0.41       4.2       0.0                          
+    0:01:15   12579.1      0.41       4.2       0.0                          
+    0:01:15   12579.1      0.41       4.2       0.0                          
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:15   12579.1      0.41       4.2       0.0                          
+    0:01:18   12678.9      0.20       1.6      24.2 REG51/q_reg[13]/D        
+    0:01:22   12730.0      0.11       1.0      48.4 REG61/q_reg[13]/D        
+    0:01:24   12806.3      0.07       0.6     145.3 REG51/q_reg[13]/D        
+    0:01:26   12849.1      0.04       0.2     145.3 REG51/q_reg[13]/D        
+    0:01:29   12886.9      0.02       0.0     153.9 REG51/q_reg[13]/D        
+    0:01:32   12899.4      0.01       0.0     153.9 REG61/q_reg[13]/D        
+    0:01:33   12909.8      0.00       0.0     153.9                          
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:33   12909.8      0.00       0.0     153.9                          
+    0:01:33   12849.9      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:33   12849.9      0.00       0.0       0.0                          
+    0:01:34   12849.9      0.00       0.0       0.0                          
+    0:01:42   12806.6      0.05       0.1       0.0                          
+    0:01:44   12800.7      0.05       0.1       0.0                          
+    0:01:45   12793.8      0.05       0.1       0.0                          
+    0:01:46   12790.1      0.05       0.1       0.0                          
+    0:01:46   12786.4      0.05       0.1       0.0                          
+    0:01:46   12786.4      0.05       0.1       0.0                          
+    0:01:50   12803.1      0.00       0.0       0.0 REG2_1/q_reg[13]/D       
+    0:01:51   12809.5      0.00       0.0       0.0                          
+    0:01:52   12730.5      0.00       0.0       0.0                          
+    0:01:52   12730.0      0.00       0.0       0.0                          
+    0:01:52   12730.0      0.00       0.0       0.0                          
+    0:01:52   12730.0      0.00       0.0       0.0                          
+    0:01:52   12730.0      0.00       0.0       0.0                          
+    0:01:52   12730.0      0.00       0.0       0.0                          
+    0:01:52   12730.0      0.00       0.0       0.0                          
+    0:01:53   12730.2      0.00       0.0       0.0                          
+Loading db file '/software/dk/nangate45/synopsys/NangateOpenCellLibrary_typical_ecsm_nowlm.db'
+
+  Optimization Complete
+  ---------------------
+1

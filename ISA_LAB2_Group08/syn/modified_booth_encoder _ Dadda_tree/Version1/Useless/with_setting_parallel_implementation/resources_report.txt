@@ -1,0 +1,82 @@
+ 
+****************************************
+Report : resources
+Design : IIR_ADV
+Version: Z-2007.03-SP1
+Date   : Tue Dec  14 23:29:42 2021
+****************************************
+
+Resource Sharing Report for design IIR_ADV in file ../subx.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r163     | s9_add_23_DP_OP_276_9387 |  |             | SUB1/sub_21          |
+| r165     | s9_add_23_DP_OP_276_9387 |  |             | SUB1/sub_21_2        |
+| r167     | s8_add_23_DP_OP_277_3998 |  |             | s6/add_23            |
+| r169     | s9_add_23_DP_OP_276_9387 |  |             | s9/add_23            |
+| r171     | s8_add_23_DP_OP_277_3998 |  |             | s8/add_23            |
+| r173     | s8_add_23_DP_OP_277_3998 |  |             | s7/add_23            |
+| r175     | DW01_add     | width=27   |               | p6/Partial_products_sum/add_23 |
+| r177     | DW01_add     | width=27   |               | p10/Partial_products_sum/add_23 |
+| r179     | DW01_add     | width=27   |               | p11/Partial_products_sum/add_23 |
+| r181     | DW01_add     | width=27   |               | p9/Partial_products_sum/add_23 |
+| r183     | DW01_add     | width=27   |               | p8/Partial_products_sum/add_23 |
+| r185     | DW01_add     | width=27   |               | p7/Partial_products_sum/add_23 |
+===============================================================================
+
+Datapath Report for design IIR_ADV in file ../subx.vhd 
+
+RTL-datapath Connections for s8_add_23_DP_OP_277_3998-str
+====================================================================
+|                      |                      |            | Bus   |
+| RTL Wire             | Datapath Port        | Direction  | Width |
+====================================================================
+| n324-n311            | I1                   | input      | 14    |
+| n268-n255            | I2                   | input      | 14    |
+| n212-n199            | I3                   | input      | 14    |
+| n156-n143            | I4                   | input      | 14    |
+| n30-n17              | O7                   | output     | 14    |
+====================================================================
+
+
+Datapath Blocks in s8_add_23_DP_OP_277_3998-str
+===============================================================================
+|            | Out   |                           | Contained      | Operation |
+| Port       | Width | Datapath Block            | Operation_Line | Type      |
+===============================================================================
+| O7         | 14    | I1 + I2 + I3 + I4         | s8/add_23      | SIGNED    |
+|            |       |                           | s6/add_23      | SIGNED    |
+|            |       |                           | s7/add_23      | SIGNED    |
+===============================================================================
+
+Datapath Report for design IIR_ADV in file ../subx.vhd 
+
+RTL-datapath Connections for s9_add_23_DP_OP_276_9387-str
+====================================================================
+|                      |                      |            | Bus   |
+| RTL Wire             | Datapath Port        | Direction  | Width |
+====================================================================
+| n100-n87             | I1                   | input      | 14    |
+| n86-n73              | I2                   | input      | 14    |
+| n380-n367            | I3                   | input      | 14    |
+| n366-n353            | O6                   | output     | 14    |
+====================================================================
+
+
+Datapath Blocks in s9_add_23_DP_OP_276_9387-str
+===============================================================================
+|            | Out   |                           | Contained      | Operation |
+| Port       | Width | Datapath Block            | Operation_Line | Type      |
+===============================================================================
+| O6         | 14    | 0 - I1 - I2 + I3          | s9/add_23      | SIGNED    |
+|            |       |                           | SUB1/sub_21_2  | SIGNED    |
+|            |       |                           | SUB1/sub_21    | SIGNED    |
+===============================================================================
+
+
+No implementations to report
+
+No multiplexors to report
+1
