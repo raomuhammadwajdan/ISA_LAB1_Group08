@@ -1,0 +1,15 @@
+ 
+****************************************
+Report : resources
+Design : IIR_ADV
+Version: Z-2007.03-SP1
+Date   : Sun Dec 12 11:19:09 2021
+****************************************
+
+
+No resource sharing information to report.
+
+No implementations to report
+
+No multiplexors to report
+1
