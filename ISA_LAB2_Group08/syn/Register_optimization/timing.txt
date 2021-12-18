@@ -1,0 +1,61 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IIR_ADV
+Version: Z-2007.03-SP1
+Date   : Thu Dec  16 06:10:48 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: B1[6] (input port clocked by MY_CLK)
+  Endpoint: REG2_1/q_reg[2]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IIR_ADV            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock MY_CLK (rise edge)                 0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.50       0.50 f
+  B1[6] (in)                               0.00       0.50 f
+  U4133/ZN (XNOR2_X1)                      0.06       0.56 f
+  U4179/ZN (OAI22_X1)                      0.07       0.63 r
+  p7/mult_21/U302/S (FA_X1)                0.14       0.77 f
+  U1047/ZN (XNOR2_X1)                      0.07       0.84 f
+  U1048/ZN (XNOR2_X1)                      0.06       0.90 f
+  p7/mult_21/U299/S (FA_X1)                0.14       1.03 r
+  U1033/ZN (NOR2_X1)                       0.03       1.06 f
+  U1034/ZN (NOR2_X1)                       0.06       1.12 r
+  U1036/ZN (AOI21_X1)                      0.04       1.16 f
+  U1038/ZN (INV_X1)                        0.05       1.20 r
+  U1041/ZN (AOI21_X1)                      0.04       1.24 f
+  U1249/Z (XOR2_X1)                        0.07       1.30 f
+  U1044/Z (MUX2_X1)                        0.07       1.37 f
+  REG2_1/q_reg[2]/D (DFFR_X1)              0.01       1.38 f
+  data arrival time                                   1.38
+
+  clock MY_CLK (rise edge)                 1.49       1.49
+  clock network delay (ideal)              0.00       1.49
+  clock uncertainty                       -0.07       1.42
+  REG2_1/q_reg[2]/CK (DFFR_X1)             0.00       1.42 r
+  library setup time                      -0.04       1.38
+  data required time                                  1.38
+  -----------------------------------------------------------
+  data required time                                  1.38
+  data arrival time                                  -1.38
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
