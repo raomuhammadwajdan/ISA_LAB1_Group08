@@ -1,0 +1,85 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : BOOTHMUL
+Version: Z-2007.03-SP1
+Date   : Thu Dec  16 06:10:48 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: REGISTER_in2/q_reg[3]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: REGISTER_out/q_reg[13]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL           5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REGISTER_in2/q_reg[3]/clocked_on (**SEQGEN**)           0.00       0.00 r
+  REGISTER_in2/q_reg[3]/Q (**SEQGEN**)                    0.00       0.00 f
+  REGISTER_in2/q[3] (reg)                                 0.00       0.00 f
+  U430/ZN (INV_X2)                                        0.11       0.11 r
+  U444/ZN (AOI22_X2)                                      0.10       0.21 f
+  U475/ZN (INV_X1)                                        0.12       0.33 r
+  U531/ZN (OAI221_X1)                                     0.07       0.40 f
+  U532/ZN (NAND2_X1)                                      0.04       0.44 r
+  U59/ZN (INV_X1)                                         0.03       0.47 f
+  U53/ZN (AOI22_X1)                                       0.06       0.54 r
+  U370/Z (XOR2_X1)                                        0.08       0.62 r
+  U52/ZN (INV_X1)                                         0.03       0.65 f
+  U46/ZN (AOI22_X1)                                       0.06       0.71 r
+  U45/ZN (XNOR2_X1)                                       0.07       0.78 r
+  U44/ZN (XNOR2_X1)                                       0.05       0.83 f
+  U454/ZN (NOR2_X1)                                       0.05       0.88 r
+  U456/ZN (OAI21_X1)                                      0.04       0.91 f
+  U457/ZN (AOI222_X1)                                     0.11       1.02 r
+  U460/ZN (OAI21_X1)                                      0.04       1.06 f
+  U461/ZN (AOI222_X1)                                     0.11       1.18 r
+  U464/ZN (OAI21_X1)                                      0.04       1.22 f
+  U465/ZN (AOI222_X1)                                     0.11       1.33 r
+  U468/ZN (OAI21_X1)                                      0.04       1.37 f
+  Partial_products_sum/add_23/U1_13/CO (FA_X1)            0.09       1.46 f
+  Partial_products_sum/add_23/U1_14/CO (FA_X1)            0.09       1.55 f
+  Partial_products_sum/add_23/U1_15/CO (FA_X1)            0.09       1.64 f
+  Partial_products_sum/add_23/U1_16/CO (FA_X1)            0.09       1.73 f
+  Partial_products_sum/add_23/U1_17/CO (FA_X1)            0.09       1.83 f
+  Partial_products_sum/add_23/U1_18/CO (FA_X1)            0.09       1.92 f
+  Partial_products_sum/add_23/U1_19/CO (FA_X1)            0.09       2.01 f
+  Partial_products_sum/add_23/U1_20/CO (FA_X1)            0.09       2.10 f
+  Partial_products_sum/add_23/U1_21/CO (FA_X1)            0.09       2.19 f
+  Partial_products_sum/add_23/U1_22/CO (FA_X1)            0.09       2.28 f
+  Partial_products_sum/add_23/U1_23/CO (FA_X1)            0.09       2.37 f
+  Partial_products_sum/add_23/U1_24/CO (FA_X1)            0.09       2.47 f
+  Partial_products_sum/add_23/U1_25/CO (FA_X1)            0.09       2.56 f
+  Partial_products_sum/add_23/U1_26/S (FA_X1)             0.13       2.68 r
+  REGISTER_out/d[13] (reg)                                0.00       2.68 r
+  REGISTER_out/q_reg[13]/next_state (**SEQGEN**)          0.00       2.69 r
+  data arrival time                                                  2.69
+
+  clock MY_CLK (rise edge)                                3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.07       2.93
+  REGISTER_out/q_reg[13]/clocked_on (**SEQGEN**)          0.00       2.93 r
+  library setup time                                      0.00       2.93
+  data required time                                                 2.93
+  --------------------------------------------------------------------------
+  data required time                                                 2.93
+  data arrival time                                                 -2.69
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.24
+
+
+1

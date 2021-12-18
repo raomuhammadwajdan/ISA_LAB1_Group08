@@ -1,0 +1,14 @@
+Removing uniquified design 'MUX61_generic_n28'.
+Removing uniquified design 'compressor_5_3'.
+Removing uniquified design 'FA'.
+Removing uniquified design 'HA'.
+Removing uniquified design 'ENCODER'.
+  Uniquified 7 instances of design 'MUX61_generic_n28'.
+  Uniquified 21 instances of design 'compressor_5_3'.
+  Uniquified 23 instances of design 'FA'.
+  Uniquified 13 instances of design 'HA'.
+  Uniquified 7 instances of design 'ENCODER'.
+  Loading design 'BOOTHMUL'
+Error: Design contains unmapped DesignWare parts.  Cannot retime. (RTDC-17)
+Warning: Retiming failed. No registers have been moved. (RTDC-14)
+0

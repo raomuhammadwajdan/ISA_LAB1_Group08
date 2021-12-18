@@ -1,0 +1,72 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : BOOTHMUL
+Version: Z-2007.03-SP1
+Date   : Thu Dec  16 06:10:48 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: REGISTER_in2/q_reg[1]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: REGISTER_out/q_reg[10]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL           5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REGISTER_in2/q_reg[1]/clocked_on (**SEQGEN**)           0.00       0.00 r
+  REGISTER_in2/q_reg[1]/Q (**SEQGEN**)                    0.00       0.00 r
+  REGISTER_in2/q[1] (reg)                                 0.00       0.00 r
+  U560/Z (XOR2_X1)                                        0.10       0.10 r
+  U1381/ZN (OAI221_X1)                                    0.06       0.16 f
+  U1484/ZN (NAND2_X1)                                     0.06       0.22 r
+  U1538/Z (XOR2_X1)                                       0.08       0.30 r
+  U458/ZN (XNOR2_X1)                                      0.07       0.36 r
+  U1528/ZN (XNOR2_X1)                                     0.07       0.44 r
+  U1337/ZN (XNOR2_X1)                                     0.07       0.50 r
+  U1526/ZN (XNOR2_X1)                                     0.06       0.56 r
+  U1329/ZN (XNOR2_X1)                                     0.06       0.63 r
+  U719/ZN (XNOR2_X1)                                      0.07       0.69 r
+  U982/ZN (NAND2_X1)                                      0.04       0.73 f
+  U624/ZN (NAND2_X1)                                      0.03       0.76 r
+  U626/ZN (NAND3_X1)                                      0.04       0.80 f
+  U659/ZN (AOI21_X1)                                      0.05       0.85 r
+  U638/ZN (OAI21_X1)                                      0.03       0.88 f
+  U639/ZN (NAND2_X1)                                      0.04       0.92 r
+  U642/ZN (AOI21_X1)                                      0.03       0.95 f
+  U671/ZN (OAI21_X1)                                      0.06       1.01 r
+  U422/ZN (NAND2_X1)                                      0.03       1.04 f
+  U423/ZN (AOI21_X1)                                      0.04       1.08 r
+  U424/ZN (XNOR2_X1)                                      0.05       1.14 r
+  REGISTER_out/d[10] (reg)                                0.00       1.14 r
+  REGISTER_out/q_reg[10]/next_state (**SEQGEN**)          0.00       1.14 r
+  data arrival time                                                  1.14
+
+  clock MY_CLK (rise edge)                                1.21       1.21
+  clock network delay (ideal)                             0.00       1.21
+  clock uncertainty                                      -0.07       1.14
+  REGISTER_out/q_reg[10]/clocked_on (**SEQGEN**)          0.00       1.14 r
+  library setup time                                      0.00       1.14
+  data required time                                                 1.14
+  --------------------------------------------------------------------------
+  data required time                                                 1.14
+  data arrival time                                                 -1.14
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
