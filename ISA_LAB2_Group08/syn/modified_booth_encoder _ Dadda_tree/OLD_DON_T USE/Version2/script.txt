@@ -1,0 +1,39 @@
+analyze -f vhdl -lib WORK ../IIR.vhd
+analyze -f vhdl -lib WORK ../reg.vhd
+analyze -f vhdl -lib WORK ../sumx.vhd
+analyze -f vhdl -lib WORK ../subx.vhd
+analyze -f vhdl -lib WORK ../Version2_multiplier/Version2.vhd
+analyze -f vhdl -lib WORK ../HA.vhd
+analyze -f vhdl -lib WORK ../fa.vhd
+analyze -f vhdl -lib WORK ../encoder.vhd
+analyze -f vhdl -lib WORK ../mux61.vhd
+analyze -f vhdl -lib WORK ../Booth_encoder.vhd
+
+set power_preserve_rtl_hier_names true
+elaborate IIR_ADV -arch bhv -lib WORK > ./Version2/elaborate.txt
+create_clock -name MY_CLK -period 3 CLK
+set_dont_touch_network MY_CLK
+set_clock_uncertainty 0.07 [get_clocks MY_CLK]
+set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] CLK]
+set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
+set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+set_load $OLOAD [all_outputs]
+
+set_implementation DW01_add/pparch p6/Partial_products_sum/add_23
+
+set_dont_touch REGISTER_in
+set_dont_touch REGISTER_out
+optimize_registers > ./Version2/optimize_registers.txt
+
+set_ultra_optimization true
+compile_ultra > ./Version2/compile_ultra.txt
+
+report_timing > ./Version2/timing_333.3M.txt
+report_area > ./Version2/area_report@3ns.txt
+report_resource > ./Version2/resources_report.txt
+
+ungroup -all -flatten
+change_names -hierarchy -rules verilog
+write_sdf ./Version2/netlist/IIR.sdf
+write -f verilog -hierarchy -output ./Version2/netlist/IIR.v
+write_sdc ./Version2/netlist/IIR.sdc
