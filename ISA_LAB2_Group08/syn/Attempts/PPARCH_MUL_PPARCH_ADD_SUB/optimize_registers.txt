@@ -1,0 +1,9 @@
+Removing uniquified design 'mulx'.
+Removing uniquified design 'sumx'.
+  Uniquified 14 instances of design 'reg'.
+  Uniquified 6 instances of design 'mulx'.
+  Uniquified 4 instances of design 'sumx'.
+  Loading design 'IIR_ADV'
+Error: Design contains unmapped DesignWare parts.  Cannot retime. (RTDC-17)
+Warning: Retiming failed. No registers have been moved. (RTDC-14)
+0
