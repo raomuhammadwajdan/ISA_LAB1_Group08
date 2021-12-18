@@ -1,0 +1,39 @@
+ 
+****************************************
+Report : resources
+Design : IIR_ADV
+Version: Z-2007.03-SP1
+Date   : Sun Dec 12 11:19:09 2021
+****************************************
+
+Resource Sharing Report for design IIR_ADV in file ./mulx.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r117     | DW02_mult    | A_width=14 |               | p6/mult_21           |
+|          |              | B_width=14 |               |                      |
+| r119     | DW01_sub     | width=14   |               | SUB1/sub_21          |
+| r121     | DW01_sub     | width=14   |               | SUB1/sub_21_2        |
+| r123     | DW01_add     | width=14   |               | s6/add_21            |
+| r125     | DW02_mult    | A_width=14 |               | p10/mult_21          |
+|          |              | B_width=14 |               |                      |
+| r127     | DW02_mult    | A_width=14 |               | p11/mult_21          |
+|          |              | B_width=14 |               |                      |
+| r129     | DW02_mult    | A_width=14 |               | p9/mult_21           |
+|          |              | B_width=14 |               |                      |
+| r131     | DW02_mult    | A_width=14 |               | p8/mult_21           |
+|          |              | B_width=14 |               |                      |
+| r133     | DW02_mult    | A_width=14 |               | p7/mult_21           |
+|          |              | B_width=14 |               |                      |
+| r135     | DW01_add     | width=14   |               | s9/add_21            |
+| r137     | DW01_add     | width=14   |               | s8/add_21            |
+| r139     | DW01_add     | width=14   |               | s7/add_21            |
+===============================================================================
+
+
+No implementations to report
+
+No multiplexors to report
+1
