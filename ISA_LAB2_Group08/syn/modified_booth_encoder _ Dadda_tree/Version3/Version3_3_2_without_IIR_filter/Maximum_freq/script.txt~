@@ -1,0 +1,37 @@
+analyze -f vhdl -lib WORK ../sumx.vhd
+analyze -f vhdl -lib WORK ../Version3_multiplier/Version3_3:2_with_regs.vhd
+analyze -f vhdl -lib WORK ../Version3_multiplier/compressor.vhd
+analyze -f vhdl -lib WORK ../HA.vhd
+analyze -f vhdl -lib WORK ../fa.vhd
+analyze -f vhdl -lib WORK ../reg.vhd
+analyze -f vhdl -lib WORK ../encoder.vhd
+analyze -f vhdl -lib WORK ../mux61.vhd
+analyze -f vhdl -lib WORK ../Booth_encoder.vhd
+
+set power_preserve_rtl_hier_names true
+elaborate BOOTHMUL -arch mixed -lib WORK > ./Version3/Version3_3:2_without_IIR_filter/Maximum_freq/elaborate.txt
+create_clock -name MY_CLK -period 1.09 CLK
+set_dont_touch_network MY_CLK
+set_clock_uncertainty 0.07 [get_clocks MY_CLK]
+set_input_delay 0.5 -max -clock MY_CLK [remove_from_collection [all_inputs] CLK]
+set_output_delay 0.5 -max -clock MY_CLK [all_outputs]
+set OLOAD [load_of NangateOpenCellLibrary/BUF_X4/A]
+set_load $OLOAD [all_outputs]
+
+set_dont_touch REGISTER_in1
+set_dont_touch REGISTER_in2
+set_dont_touch REGISTER_out
+optimize_registers > ./Version3/Version3_3:2_without_IIR_filter/Maximum_freq/optimize_registers.txt
+
+set_ultra_optimization true
+compile_ultra > ./Version3/Version3_3:2_without_IIR_filter/Maximum_freq/compile_ultra.txt
+
+report_timing > ./Version3/Version3_3:2_without_IIR_filter/Maximum_freq/timing_333.3M.txt
+report_area > ./Version3/Version3_3:2_without_IIR_filter/Maximum_freq/area_report@3ns.txt
+report_resource > ./Version3/Version3_3:2_without_IIR_filter/Maximum_freq/resources_report.txt
+
+ungroup -all -flatten
+change_names -hierarchy -rules verilog
+write_sdf ./Version3/Version3_3:2_without_IIR_filter/Maximum_freq/netlist/IIR.sdf
+write -f verilog -hierarchy -output ./Version3/Version3_3:2_without_IIR_filter/Maximum_freq/netlist/IIR.v
+write_sdc ./Version3/Version3_3:2_without_IIR_filter/Maximum_freq/netlist/IIR.sdc

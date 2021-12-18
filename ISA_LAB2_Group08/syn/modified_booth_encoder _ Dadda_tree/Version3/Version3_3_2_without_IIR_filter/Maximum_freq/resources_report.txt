@@ -1,0 +1,22 @@
+ 
+****************************************
+Report : resources
+Design : BOOTHMUL
+Version: Z-2007.03-SP1
+Date   : Thu Dec  16 06:10:48 2021
+****************************************
+
+Resource Sharing Report for design BOOTHMUL in file ../mux61.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r289     | DW01_add     | width=27   |               | Partial_products_sum/add_23 |
+===============================================================================
+
+
+No implementations to report
+
+No multiplexors to report
+1

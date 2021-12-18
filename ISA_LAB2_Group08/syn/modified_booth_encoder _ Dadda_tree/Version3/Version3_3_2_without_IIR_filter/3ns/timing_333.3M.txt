@@ -1,0 +1,78 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : BOOTHMUL
+Version: Z-2007.03-SP1
+Date   : Thu Dec  16 06:10:48 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: REGISTER_in2/q_reg[7]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: REGISTER_out/q_reg[13]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  BOOTHMUL           5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REGISTER_in2/q_reg[7]/clocked_on (**SEQGEN**)           0.00       0.00 r
+  REGISTER_in2/q_reg[7]/Q (**SEQGEN**)                    0.00       0.00 f
+  REGISTER_in2/q[7] (reg)                                 0.00       0.00 f
+  U415/ZN (INV_X1)                                        0.15       0.15 r
+  U427/ZN (NOR2_X2)                                       0.10       0.25 f
+  U318/ZN (AOI211_X1)                                     0.12       0.37 r
+  U317/ZN (INV_X1)                                        0.07       0.44 f
+  U184/ZN (OAI221_X1)                                     0.11       0.55 r
+  U389/Z (XOR2_X1)                                        0.10       0.65 r
+  U164/ZN (XNOR2_X1)                                      0.07       0.72 r
+  U162/ZN (NOR2_X1)                                       0.03       0.75 f
+  U161/ZN (AOI22_X1)                                      0.08       0.83 r
+  U384/Z (XOR2_X1)                                        0.08       0.91 r
+  U124/ZN (XNOR2_X1)                                      0.05       0.96 f
+  U369/Z (XOR2_X1)                                        0.09       1.05 f
+  U23/ZN (XNOR2_X1)                                       0.07       1.12 f
+  Partial_products_sum/add_23/U1_13/CO (FA_X1)            0.11       1.23 f
+  Partial_products_sum/add_23/U1_14/CO (FA_X1)            0.09       1.32 f
+  Partial_products_sum/add_23/U1_15/CO (FA_X1)            0.09       1.41 f
+  Partial_products_sum/add_23/U1_16/CO (FA_X1)            0.09       1.50 f
+  Partial_products_sum/add_23/U1_17/CO (FA_X1)            0.09       1.60 f
+  Partial_products_sum/add_23/U1_18/CO (FA_X1)            0.09       1.69 f
+  Partial_products_sum/add_23/U1_19/CO (FA_X1)            0.09       1.78 f
+  Partial_products_sum/add_23/U1_20/CO (FA_X1)            0.09       1.87 f
+  Partial_products_sum/add_23/U1_21/CO (FA_X1)            0.09       1.96 f
+  Partial_products_sum/add_23/U1_22/CO (FA_X1)            0.09       2.05 f
+  Partial_products_sum/add_23/U1_23/CO (FA_X1)            0.09       2.15 f
+  Partial_products_sum/add_23/U1_24/CO (FA_X1)            0.09       2.24 f
+  Partial_products_sum/add_23/U1_25/CO (FA_X1)            0.09       2.33 f
+  Partial_products_sum/add_23/U1_26/S (FA_X1)             0.13       2.46 r
+  REGISTER_out/d[13] (reg)                                0.00       2.46 r
+  REGISTER_out/q_reg[13]/next_state (**SEQGEN**)          0.00       2.46 r
+  data arrival time                                                  2.46
+
+  clock MY_CLK (rise edge)                                3.00       3.00
+  clock network delay (ideal)                             0.00       3.00
+  clock uncertainty                                      -0.07       2.93
+  REGISTER_out/q_reg[13]/clocked_on (**SEQGEN**)          0.00       2.93 r
+  library setup time                                      0.00       2.93
+  data required time                                                 2.93
+  --------------------------------------------------------------------------
+  data required time                                                 2.93
+  data arrival time                                                 -2.46
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.47
+
+
+1
